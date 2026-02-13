@@ -1,15 +1,16 @@
 {
   "version": 2,
   "builds": [
-    { 
-      "src": "manage.py", 
+    {
+      "src": "qrcodegenerator/wsgi.py",
       "use": "@vercel/python",
-      "config": {"maxLanbdaSize": "15mb", "runtime": "python3.11.3"}
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
     }
   ],
   "routes": [
-    { 
-      "src": "/(.*)", 
-      "dest": "manage.py" }
+    {
+      "src": "/(.*)",
+      "dest": "qrcodegenerator/wsgi.py"
+    }
   ]
 }
