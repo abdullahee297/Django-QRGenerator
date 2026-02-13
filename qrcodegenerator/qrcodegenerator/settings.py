@@ -25,8 +25,7 @@ SECRET_KEY = "django-insecure-d@4ed3x)x&%^-od0i*^iq1f#q67jncvepjz)0lz1k4%2^nfe8y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://django-qr-generator.vercel.app/']
-
+ALLOWED_HOSTS = ['django-qr-generator.vercel.app', 'localhost', '127.0.0.1', '.vercel.app']
 
 # Application definition
 
