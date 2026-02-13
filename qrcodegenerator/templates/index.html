@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+<body>
+    <nav>
+        <h1>Welcome to QR Generator</h1>
+    </nav>
+    
+    <div class="main">
+        <div class="container">
+            <h3>Enter Text or link to Generate QR Cde</h3>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="text" name="link" placeholder="Add link" required>
+                <button type="submit"> Generate</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

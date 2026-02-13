@@ -1,0 +1,113 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: pink;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 0, 234);
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.main {
+    height: calc(100vh - 60px); /* subtract navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.473);
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.container h3 {
+    font-size: 20px;
+    color: rgb(255, 0, 234);
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.container input {
+    width: 80%;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+
+.container input:focus {
+    border-color: rgb(255, 0, 234);
+    box-shadow: 0 0 5px rgba(255, 0, 234, 0.5);
+}
+
+.container button {
+    width: 85%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(255, 28, 236);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    background-color: rgb(233, 13, 211);
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .main {
+        height: auto; 
+        padding: 20px 0;
+        align-items: flex-start; 
+    }
+
+    .container {
+        width: 90%;        
+        height: auto;       
+        padding: 20px;      
+        border-radius: 20px;
+    }
+
+    .container h3 {
+        font-size: 18px;     
+    }
+
+    .container input {
+        width: 95%;          
+        padding: 12px;
+    }
+
+    .container button {
+        width: 95%;           
+        padding: 12px;
+        font-size: 16px;      
+    }
+
+    .container img {
+        width: 80%;           
+        height: auto;
+    }
+}
